@@ -1,10 +1,17 @@
 
 var app= angular.module('schoolApp') 
-angular.factory('schoolService', function($http) {
-    this.getschoolData = function() {
-         $http.get('school.json');
-    },
+app.service('schoolService', function($http) {
+    this.getSchool= function() {
+         $http.get('school.json').then(function(resp){
+           console.log(resp)
+       })
+
+         }
+    
     
 
 
-})
+});
+
+
+
