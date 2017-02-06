@@ -1,0 +1,74 @@
+[
+{
+	"id":"1",
+	"name":"lilly",
+	"role": "student",
+	"class":"10",
+	"teacher":"XYZ",
+	"school":"pvs grand school"
+
+},
+{
+	"id":"2",
+	"name":"lilly",
+	"role": "student",
+	"class":"09",
+	"teacher":"XYZ",
+	"school":"pvs grand school"
+
+},
+{
+	"id":"3",
+	"name":"lilly",
+	"role": "student",
+	"class":"10",
+	"teacher":"XYZ",
+	"school":"pvs grand school"
+
+},
+{
+	"id":"4",
+	"name":"lilly",
+	"role": "student",
+	"class":"10",
+	"teacher":"XYZ",
+	"school":"pvs grand school"
+
+},
+{
+	"id":"5",
+	"name":"lilly",
+	"role": "student",
+	"class":"10",
+	"teacher":"XYZ",
+	"school":"pvs grand school"
+
+},
+{
+	"id":"6",
+	"name":"lilly",
+	"role": "student",
+	"class":"10",
+	"teacher":"XYZ",
+	"school":"pvs grand school"
+
+},
+{
+	"id":"7",
+	"name":"lilly",
+	"role": "student",
+	"class":"10",
+	"teacher":"XYZ",
+	"school":"pvs grand school"
+
+},
+{
+	"id":"8",
+	"name":"lilly",
+	"role": "student",
+	"class":"10",
+	"teacher":"XYZ",
+	"school":"pvs grand school"
+
+},
+]

@@ -1,0 +1,23 @@
+<body ng-app="schoolApp">    
+       <div align="center"><p> Information</p></div>    
+       <div ng-controller="schoolCtrl">    
+         <table align="center" border="1">    
+           <tr>    
+             <th>ID</th>    
+             <th>Name</th>    
+             <th>role</th>    
+             <th>class</th>    
+             <th>teacher</th>    
+             <th>school</th>    
+           </tr>    
+           <tr ng-repeat="employee in employees">    
+             <td>{{school.id}}</td>    
+             <td>{{school.name}}</td>    
+             <td>{{school.role}}</td>    
+             <td>{{school.class}}</td>    
+             <td>{{school.teacher}}</td>    
+             <td>{{(school.school}}</td>    
+           </tr>    
+         </table>    
+       </div>    
+     </body>    
