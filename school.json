@@ -10,7 +10,7 @@
 },
 {
 	"id":"2",
-	"name":"lilly",
+	"name":"bindu",
 	"role": "student",
 	"class":"09",
 	"teacher":"XYZ",
@@ -19,7 +19,7 @@
 },
 {
 	"id":"3",
-	"name":"lilly",
+	"name":"abcd",
 	"role": "student",
 	"class":"10",
 	"teacher":"XYZ",
@@ -28,7 +28,7 @@
 },
 {
 	"id":"4",
-	"name":"lilly",
+	"name":"lmnop",
 	"role": "student",
 	"class":"10",
 	"teacher":"XYZ",
@@ -37,7 +37,7 @@
 },
 {
 	"id":"5",
-	"name":"lilly",
+	"name":"oprst",
 	"role": "student",
 	"class":"10",
 	"teacher":"XYZ",
@@ -46,29 +46,29 @@
 },
 {
 	"id":"6",
-	"name":"lilly",
+	"name":"ghgdhgsgj",
 	"role": "student",
 	"class":"10",
 	"teacher":"XYZ",
-	"school":"pvs grand school"
+	"school":"prasanthi grand school"
 
 },
 {
 	"id":"7",
-	"name":"lilly",
+	"name":"sssssss",
 	"role": "student",
 	"class":"10",
 	"teacher":"XYZ",
-	"school":"pvs grand school"
+	"school":"hhhh grand school"
 
 },
 {
 	"id":"8",
-	"name":"lilly",
+	"name":"student",
 	"role": "student",
 	"class":"10",
 	"teacher":"XYZ",
 	"school":"pvs grand school"
 
-},
+}
 ]

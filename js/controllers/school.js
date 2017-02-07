@@ -1,16 +1,17 @@
-var app = angular.module('schoolApp')
+var app = angular.module('schoolApp');
 
-app.controller('schoolCtrl', function($scope, $http,schoolService){
-
-       schoolService.getschool();
-
+app.controller('schoolCtrl', function($scope, schoolFactory){
 	
-	error(function(data,status){    
-		console.error('Fail to load data', status, data);    
-		$scope.school = { };     
-	}) 
 
+     $scope.getSchool=function(){
+     	schoolFactory.getSchoolFactory().then(function(resp){
+     		$scope.schoolList = resp;
+     		console.log("$scope.schoolList", $scope.schoolList)
+     	});
+     	
+     }
 
+   $scope.getSchool();
 
 
 

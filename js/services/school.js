@@ -1,16 +1,10 @@
 
-var app= angular.module('schoolApp') 
-app.service('schoolService', function($http) {
-    this.getSchool= function() {
-         $http.get('school.json').then(function(resp){
-           console.log(resp)
-       })
-
+var app= angular.module('schoolApp'); 
+app.service('schoolService', function($http,$q) {
+    this.getSchoolInfo= function() {
+        return  $http.get('school.json');
          }
     
-    
-
-
 });
 
 
