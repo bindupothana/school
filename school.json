@@ -1,57 +1,118 @@
 [
-{
-	"id":"1",
-	"name":"lilly",
-	"role": "student",
-	"class":"10",
-	"teacher":"XYZ",
-	"school":"pvs grand school"
+  {    "id":"423",
+	"school name":"prasanthi vidya vihar",
+    "student name":"himaindu",
+    "class": "10 ",
+    "teacher":"vasantha"
 
-},
-{
-	"id":"2",
-	"name":"abc",
-	"role": "student",
-	"class":"10",
-	"teacher":"XYZ",
-	"school":"svs grand school"
+	},
+	 {    "id":"402",
+	"school name":"prasanthi vidya vihar",
+    "student name":"latha",
+    "class": "10 ",
+    "teacher":"vasantha"
 
-},
-{
-	"id":"3",
-	"name":"def",
-	"role": "student",
-	"class":"10",
-	"teacher":"XYZ",
-	"school":"hjg grand school"
+	},
+	 {    "id":"403",
+	"school name":"prasanthi vidya vihar",
+    "student name":"sravani",
+    "class": "10 ",
+    "teacher":"vasantha"
 
-},
-{
-	"id":"4",
-	"name":"ghi",
-	"role": "student",
-	"class":"10",
-	"teacher":"XYZ",
-	"school":"kkk grand school"
+	},
+	 {    "id":"404",
+	"school name":"prasanthi vidya vihar",
+    "student name":"swapna",
+    "class": "10 ",
+    "teacher":"vasantha"
 
-},
-{
-	"id":"5",
-	"name":"klm",
-	"role": "student",
-	"class":"10",
-	"teacher":"XYZ",
-	"school":"mno grand school"
+	},
+	{    "id":"501",
+	"school name":"prasanthi vidya vihar",
+    "student name":"naveen",
+    "class": "09",
+    "teacher":"vasantha"
 
-},
-{
-	"id":"6",
-	"name":"nopq",
-	"role": "student",
-	"class":"10",
-	"teacher":"XYZ",
-	"school":"prasanthi grand school"
+	},
+	{    "id":"502",
+	"school name":"prasanthi vidya vihar",
+    "student name":"ramu",
+    "class": "09 ",
+    "teacher":"vasantha"
 
-}
+	},
+	{    "id":"503",
+	"school name":"prasanthi vidya vihar",
+    "student name":"suresh",
+    "class": "09 ",
+    "teacher":"vasantha"
 
+	},{    "id":"504",
+	"school name":"prasanthi vidya vihar",
+    "student name":"sandy",
+    "class": "09 ",
+    "teacher":"vasantha"
+
+	},
+	{    "id":"401",
+	"school name":"school of royals",
+    "student name":"dairy milk",
+    "class": "10 ",
+    "teacher":"lucky"
+
+	},
+
+	{    "id":"402",
+	"school name":"school of royals",
+    "student name":"kit kat",
+    "class": "10 ",
+    "teacher":"lucky"
+
+	},
+
+	{    "id":"403",
+	"school name":"school of royals",
+    "student name":"milky bar",
+    "class": "10 ",
+    "teacher":"lucky"
+
+	},
+
+	{    "id":"404",
+	"school name":"school of royals",
+    "student name":"luv it",
+    "class": "10 ",
+    "teacher":"lucky"
+
+	},
+
+	
+	{    "id":"501",
+	"school name":"school of royals",
+    "student name":"sea choco",
+    "class": "09 ",
+    "teacher":"jain"
+
+	},
+	{    "id":"502",
+	"school name":"school of royals",
+    "student name":"candy",
+    "class": "09 ",
+    "teacher":"jain"
+
+	},
+	{    "id":"503",
+	"school name":"school of royals",
+    "student name":"milky choo",
+    "class": "09 ",
+    "teacher":"jain"
+
+	},
+	{    "id":"504",
+	"school name":"school of royals",
+    "student name":"alien choco",
+    "class": "09 ",
+    "teacher":"jain"
+
+	}
 ]

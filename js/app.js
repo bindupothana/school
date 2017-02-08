@@ -1,5 +1,5 @@
 angular.module('schoolApp', [
-  'ui.router'
+  'ui.router','ui.bootstrap.accordion'
 ])
 .config( function($stateProvider,$urlRouterProvider) {
   $stateProvider

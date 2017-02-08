@@ -21,8 +21,69 @@
 <div class="Container" ng-app="schoolApp">
 <h1>school information</h1>
 <div ng-controller="schoolCtrl">
-<div><li ng-repeat="school in schoolList">{{school}}</li>
-</div>
+
+<div class="panel-group" id="accordion">
+
+
+
+
+
+<div class="panel-group">
+    
+	<div class="panel panel-default">
+        <a class="list-group-item" data-toggle="collapse" href="#{{$index}}">
+            
+            prasanthi vidya vihar
+        </a>
+		<div class="panel-collapse collapse" id="collapseTC001A">
+			<div class="panel-body">
+				<a href="#" class="list-group-item">students</a>
+				<a href="#" class="list-group-item">teachers</a>
+				<a href="#" class="list-group-item">class</a>
+				</div>
+		</div>
+	</div>
+    
+	<!--<accordion>
+    <accordion-group heading="{{group.title}}"  ng-repeat="school in schoolList">
+      
+      <li ng-repeat="school in schoolList">{{school}}</li>
+      <li ng-repeat="school in schoolList">{{school}}</li>
+        
+      
+    </accordion-group>   
+  </accordion>-->
+
+<!--<div class="accordion-group">
+    <div class="accordion-heading" ><a class="accordion-toggle" ng-click="isOpen = !isOpen">Some </a></div>
+    <div class="accordion-body" collapse="!isOpen">
+      <div class="accordion-inner">Some Content</div>
+    </div>
+  </div> --> 
+<div ng-repeat="(key, value) in schoolList">
+     <div class="panel panel-default">
+     <div class="panel-heading">
+       <h4 class="panel-title">
+         <a data-toggle="collapse" data-parent="#accordion" href="#{{$index}}">{{key}}</a>
+        </h4>
+     </div>
+     <div id="{{$index}}" class="panel-collapse collapse out">
+     <div class="panel-body">
+     <li class="active"><a href="#firstTab" data-toggle="tab">Student</a></li>
+     <li class="active"><a href="#firstTab" data-toggle="tab">Teacher</a></li>
+     </div>
+     </div>
+     </div>
+      </div>
+
+
+
+
+
+
+
+<div ng-controller="schoolCtrl">
+
 </div>
 
 </body>

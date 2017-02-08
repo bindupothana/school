@@ -2,7 +2,22 @@ var app = angular.module('schoolApp');
 app.factory('schoolFactory', function($q, schoolService) {
 var factory={};
 	factory.getSchoolFactory = function() {
-    [
+    
+
+
+
+		var deferred = $q.defer();
+		schoolService.getSchoolInfo().then(
+          function(successInfo) { 
+          	console.log(successInfo.data)
+
+
+
+
+
+
+
+            [
 {
  "school":"pvs grand school":["id":"1","name":"lilly","role": "student","class":"10","teacher":"XYZ"]},
 {"school":"svs grand school":["id":"2","name":"abc","role": "student","class":"10","teacher":"XYZ"]}
@@ -14,12 +29,6 @@ var factory={};
  
 ]
 
-
-
-		var deferred = $q.defer();
-		schoolService.getSchoolInfo().then(
-          function(successInfo) { 
-          	console.log(successInfo.data)
               deferred.resolve(successInfo.data);
           },
           function(errorInfo) {
