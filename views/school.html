@@ -1,32 +1,10 @@
-<!doctype html>
-<html ng-app="myApp">
+<div id="app" ng-app="schoolApp">
+  <div id="controller" ng-controller="schoolCtrl">
+    <uib-accordion close-others="false">
 
-<head>
 
-  <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
-  <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.8/angular.js" data-semver="1.4.8"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
-  <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.0.3.js"></script>
-  <script src="script.js"></script>
-</head>
-
-<body>
-
-  <script type="text/ng-template" id="menuTree">
-      <uib-accordion-group>
-        <uib-accordion-heading ng-if="menu.listChilds">
-          {{menu.label}}
-        </uib-accordion-heading>
-        <div ng-repeat="item in menu.listChilds">{{item.label}}</div>
-      </uib-accordion-group>
-  </script>
-
-  <div ng-controller="MenuController">
-    <uib-accordion close-others="true">
-      <div ng-repeat="menu in items" ng-include="'menuTree'"></div>
-    </uib-accordion>
-  </div>
-
-</body>
-
-</html>
+    <div class="btn-group form-group text-center">
+        <button type="button" class="btn btn-warning" ng-click="toggle(true)">Open</button>
+        <button type="button" class="btn btn-warning" ng-click="toggle(false)">Close</button>
+      </div>
+    <uib-accordion-group is-open="school.state" ng-repeat="school in schoolList">

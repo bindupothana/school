@@ -10,65 +10,48 @@
 },
 {
 	"id":"2",
-	"name":"bindu",
+	"name":"abc",
 	"role": "student",
-	"class":"09",
+	"class":"10",
 	"teacher":"XYZ",
-	"school":"pvs grand school"
+	"school":"svs grand school"
 
 },
 {
 	"id":"3",
-	"name":"abcd",
+	"name":"def",
 	"role": "student",
 	"class":"10",
 	"teacher":"XYZ",
-	"school":"pvs grand school"
+	"school":"hjg grand school"
 
 },
 {
 	"id":"4",
-	"name":"lmnop",
+	"name":"ghi",
 	"role": "student",
 	"class":"10",
 	"teacher":"XYZ",
-	"school":"pvs grand school"
+	"school":"kkk grand school"
 
 },
 {
 	"id":"5",
-	"name":"oprst",
+	"name":"klm",
 	"role": "student",
 	"class":"10",
 	"teacher":"XYZ",
-	"school":"pvs grand school"
+	"school":"mno grand school"
 
 },
 {
 	"id":"6",
-	"name":"ghgdhgsgj",
+	"name":"nopq",
 	"role": "student",
 	"class":"10",
 	"teacher":"XYZ",
 	"school":"prasanthi grand school"
 
-},
-{
-	"id":"7",
-	"name":"sssssss",
-	"role": "student",
-	"class":"10",
-	"teacher":"XYZ",
-	"school":"hhhh grand school"
-
-},
-{
-	"id":"8",
-	"name":"student",
-	"role": "student",
-	"class":"10",
-	"teacher":"XYZ",
-	"school":"pvs grand school"
-
 }
+
 ]
