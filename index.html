@@ -7,7 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
-<script src="js/app.js"></script>
+
   <script src="js/app.js"></script>
 
 
@@ -18,9 +18,11 @@
 
 </head>
 <body>
-<div class="Container" ng-app="schoolApp">
-<h1>school information</h1>
 <div ng-controller="schoolCtrl">
+
+<div class="school information" ng-app="schoolApp">
+<h1>school information</h1>
+
 
 <div class="panel-group" id="accordion">
 
@@ -28,38 +30,7 @@
 
 
 
-<div class="panel-group">
-    
-	<div class="panel panel-default">
-        <a class="list-group-item" data-toggle="collapse" href="#{{$index}}">
-            
-            prasanthi vidya vihar
-        </a>
-		<div class="panel-collapse collapse" id="collapseTC001A">
-			<div class="panel-body">
-				<a href="#" class="list-group-item">students</a>
-				<a href="#" class="list-group-item">teachers</a>
-				<a href="#" class="list-group-item">class</a>
-				</div>
-		</div>
-	</div>
-    
-	<!--<accordion>
-    <accordion-group heading="{{group.title}}"  ng-repeat="school in schoolList">
-      
-      <li ng-repeat="school in schoolList">{{school}}</li>
-      <li ng-repeat="school in schoolList">{{school}}</li>
-        
-      
-    </accordion-group>   
-  </accordion>-->
 
-<!--<div class="accordion-group">
-    <div class="accordion-heading" ><a class="accordion-toggle" ng-click="isOpen = !isOpen">Some </a></div>
-    <div class="accordion-body" collapse="!isOpen">
-      <div class="accordion-inner">Some Content</div>
-    </div>
-  </div> --> 
 <div ng-repeat="(key, value) in schoolList">
      <div class="panel panel-default">
      <div class="panel-heading">
@@ -71,6 +42,7 @@
      <div class="panel-body">
      <li class="active"><a href="#firstTab" data-toggle="tab">Student</a></li>
      <li class="active"><a href="#firstTab" data-toggle="tab">Teacher</a></li>
+    
      </div>
      </div>
      </div>
