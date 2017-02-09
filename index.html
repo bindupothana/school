@@ -1,62 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="studentApp">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
 
-  <script src="js/app.js"></script>
-
-
-<script src="js/controllers/school.js"></script>
-<script src="js/services/school.js"></script>
-<script src="js/factory/school.js"></script>
-
+ <script src="js/app.js"></script>
+ <script src="js/controllers/student.js"> </script>
+ <script src="js/factory/student.js"></script>
+ <script src="js/services/student.js"></script>+
 
 </head>
-<body>
-<div ng-controller="schoolCtrl">
-
-<div class="school information" ng-app="schoolApp">
-<h1>school information</h1>
+<body ng-controller="studentCtrl">
+ <div class="Students Information:">
+   <h2> School Information </h2>
 
 
-<div class="panel-group" id="accordion">
+   <div class="panel-group" id="accordion">
+     <div ng-repeat="(schoolName, schoolData) in schoolList">
+       <div class="panel panel-default">
+         <div class="panel-heading">
+           <h4 class="panel-title">
+             <a data-toggle="collapse" data-parent="#accordion" href="#{{$index}}">{{schoolName}}</a>
+           </h4>
+         </div>
+         <div id="{{$index}}" class="panel-collapse collapse out">
+
+
+
+           <div class="panel-body">
+             <div ng-repeat="(key, value) in schoolData">
+               <div class="panel panel-default">
+                 <div class="panel-heading">
+                   <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#{{key}}">{{key}}{{index}}</a>
+                   </h4>
+                 </div>
+                 <div id="{{key}}{{$index}}" class="panel-collapse collapse out">
+                   <div class="panel-body">
+
+                   </div>
+
+
+
+
+
+           <div class="panel-body">
+             <div ng-repeat="(role, roleLi) in schoolData">
+               <div class="panel panel-default">
+                 <div class="panel-heading">
+                   <h4 class="panel-title">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#{{key}}">{{key}}{{index}}</a>
+                   </h4>
+                 </div>
+                 <div id="{{key}}{{$index}}" class="panel-collapse collapse out">
+                   <div class="panel-body">
+
+                   </div>
 
 
 
 
 
 
-<div ng-repeat="(key, value) in schoolList">
-     <div class="panel panel-default">
-     <div class="panel-heading">
-       <h4 class="panel-title">
-         <a data-toggle="collapse" data-parent="#accordion" href="#{{$index}}">{{key}}</a>
-        </h4>
+
+
+
+                 </div>
+               </div>
+             </div>
+
+           </div>
+         </div>
+       </div>
      </div>
-     <div id="{{$index}}" class="panel-collapse collapse out">
-     <div class="panel-body">
-     <li class="active"><a href="#firstTab" data-toggle="tab">Student</a></li>
-     <li class="active"><a href="#firstTab" data-toggle="tab">Teacher</a></li>
-    
-     </div>
-     </div>
-     </div>
-      </div>
 
-
-
-
-
-
-
-<div ng-controller="schoolCtrl">
-
-</div>
-
+   </div>
+ </div>
 </body>
 </html>

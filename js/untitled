@@ -1,0 +1,37 @@
+
+for(var i=0; i< successInfo.data.length; i++){
+          console.log(successInfo.data[i].school_name)    
+          var roleMap = isExistKey(schoolNameMap, successInfo.data[i].school_name);
+         
+          if(roleMap){
+       
+       var rolelist = isExistKey(roleMap, successInfo.data[i].role);
+      
+       if(rolelist){
+         rolelist.push(successInfo.data[i]);
+       }
+
+
+       else{
+         rolelist = [];
+         rolelist.push(successInfo.data[i]);
+       }
+              
+      
+       roleMap[successInfo.data[i].role] = roleList;
+              schoolNameMap[successInfo.data[i].school_name] = roleMap;
+          } 
+
+          else{
+              var roleList = [];
+              roleList.push(successInfo.data[i]);
+       var roleMap = {};
+       
+
+       roleMap[successInfo.data[i].role] = roleList;
+              schoolNameMap[successInfo.data[i].school_name] = roleMap;
+         
+
+
+          }
+   }
