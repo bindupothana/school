@@ -1,84 +1,80 @@
 <!DOCTYPE html>
 <html ng-app="studentApp">
 <head>
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
-
- <script src="js/app.js"></script>
- <script src="js/controllers/student.js"> </script>
- <script src="js/factory/student.js"></script>
- <script src="js/services/student.js"></script>+
-
-</head>
-<body ng-controller="studentCtrl">
- <div class="Students Information:">
-   <h2> School Information </h2>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.9/angular-filter.js"></script>
 
 
-   <div class="panel-group" id="accordion">
-     <div ng-repeat="(schoolName, schoolData) in schoolList">
-       <div class="panel panel-default">
-         <div class="panel-heading">
-           <h4 class="panel-title">
-             <a data-toggle="collapse" data-parent="#accordion" href="#{{$index}}">{{schoolName}}</a>
-           </h4>
-         </div>
-         <div id="{{$index}}" class="panel-collapse collapse out">
+   <script src="js/app.js"></script>
+  <script src="js/controllers/student.js"> </script>
+  <script src="js/factory/student.js"></script>
+  <script src="js/services/student.js"></script>
+ 
+ </head>
+ <body ng-controller="studentCtrl">
+  <div class="Students Information:">
+    <h2> school information </h2>
+    <div class="panel-group" id="accordion">
+   
 
 
+      <div ng-repeat="(schoolName, schoolData) in schoolList">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#{{schoolName}}">{{schoolName}}</a>
+            </h4>
+          </div>
+          <div id="{{schoolName}}" class="panel-collapse collapse out">
+            <div class="panel-body"> 
+              <div ng-repeat="(key, value) in schoolData">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#{{schoolName}}{{$index}}">{{key}}{{index}}</a> 
 
-           <div class="panel-body">
-             <div ng-repeat="(key, value) in schoolData">
-               <div class="panel panel-default">
-                 <div class="panel-heading">
-                   <h4 class="panel-title">
-                     <a data-toggle="collapse" data-parent="#accordion" href="#{{key}}">{{key}}{{index}}</a>
-                   </h4>
-                 </div>
-                 <div id="{{key}}{{$index}}" class="panel-collapse collapse out">
-                   <div class="panel-body">
-
-                   </div>
+                    </h4>
 
 
 
+                  </div>
+                  <div id="{{schoolName}}{{$index}}" class="panel-collapse collapse out">
+                    <div class="panel-body">
+
+                      <div ng-repeat="student in value">
+                      <ul>
+                          <li><a href= "#{student_name}"> </a>Name: {{student.student_name}}</li>
+                          <li>class: {{student.class}}</li>
+                          
+                          <li>id: {{student.id}}</li>
+                           
+                        </ul>
+                        
+                      </div>
+
+                        
 
 
-           <div class="panel-body">
-             <div ng-repeat="(role, roleLi) in schoolData">
-               <div class="panel panel-default">
-                 <div class="panel-heading">
-                   <h4 class="panel-title">
-                     <a data-toggle="collapse" data-parent="#accordion" href="#{{key}}">{{key}}{{index}}</a>
-                   </h4>
-                 </div>
-                 <div id="{{key}}{{$index}}" class="panel-collapse collapse out">
-                   <div class="panel-body">
+                     </div>
+ 
+                  </div> 
 
-                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
+        </div>
+      </div>
+    </div>
+  </div>
 
-
-
-
-
-
-
-
-                 </div>
-               </div>
-             </div>
-
-           </div>
-         </div>
-       </div>
-     </div>
-
-   </div>
- </div>
+</div>
+</div>
 </body>
-</html>
+</html>     

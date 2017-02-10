@@ -1,49 +1,57 @@
-
- var app = angular.module('schoolApp');
-app.factory('schoolFactory', function($q, schoolService) {
+ var app = angular.module('studentApp');
+app.factory('studentFactory', function($q, studentService) {
 var factory={};
-var map={};
-function get(k){
-              return map[k];
-            }
-	factory.getSchoolFactory = function() {
-		var deferred = $q.defer();
-		schoolService.getSchoolInfo().then(
-          function(successInfo) { 
-          	console.log(successInfo.data)
+var schoolNameMap = {};
+var studentNameMap={};
+
+function isExistKey(mapname, key){
+      return mapname[key];
+    }
+   factory.getStudentFactory = function() {
+       
+       var deferred = $q.defer();
+       studentService.getSchoolInfo().then(
+        function(successInfo) {
+            console.log(successInfo.data)
+
+ 
+
+   for(var i=0; i< successInfo.data.length; i++){
+          console.log(successInfo.data[i].school_name)    
+          var roleMap = isExistKey(schoolNameMap, successInfo.data[i].school_name);
+          if(roleMap){
+       var roleList = isExistKey(roleMap, successInfo.data[i].role);
+       if(roleList){
+         roleList.push(successInfo.data[i]);
+       }else{
+         roleList = [];
+         roleList.push(successInfo.data[i]);
+       }
+              
+       roleMap[successInfo.data[i].role] = roleList;
+              schoolNameMap[successInfo.data[i].school_name] = roleMap;
+          } else{
+              var roleList = [];
+              roleList.push(successInfo.data[i]);
+       var roleMap = {};
+       roleMap[successInfo.data[i].role] = roleList;
+              schoolNameMap[successInfo.data[i].school_name] = roleMap;
+          }
+   }
 
 
-           
+      console.log(schoolNameMap)
 
-            
+            deferred.resolve(schoolNameMap);
+        },
+        function(errorInfo) {
+             deferred.reject([]);
+        });
+   return deferred.promise;
+   }
 
-            for(var i=0;i<successInfo.data.length; i++){
-              console.log(successInfo.data[i].school_name)
-              var data =get(successInfo.data[i].school_name);
-              if(data){
-                data.push(successInfo.data[i]);
-                map[successInfo.data[i].school_name]=data;
+   return factory;
+   
+   
 
-              }
-              else{
-                var array=[];
-                array.push(successInfo.data[i])
-                map[successInfo.data[i].school_name]=array;
-              }
-
-            }
-            console.log(map)
-
-
-
-
-              deferred.resolve(map);
-          },
-          function(errorInfo) {
-               deferred.reject([]);
-          });
-     return deferred.promise;
-	}
-	return factory;
-    
-    });
+});

@@ -1,135 +1,75 @@
-[
-  {    "id":"401",
-	"school_name":"prasanthi vidya vihar",
-    "name":"himabindu",
-    "class": "10 ",
-    "role":"student",
-    "teacher":"devi"
+[ {
+   "class": "10",
+   "student_name": "bindu",
+   "role": "Student",
+   "id": "423",
+   "school_name": "prasanthi"
+  
+ },
 
-	},
-	 {    "id":"402",
-	"school_name":"prasanthi vidya vihar",
-    "student_name":"latha",
-    "class": "10 ",
-    "role":"teacher",
-    "teacher":"vasantha"
+ {
+   "class": "10",
+   "student_name": "swapna",
+   "id": "424",
+   "role": "Teacher",
+   "school_name": "prasanthi"
+  
+  },
+   
+ 
 
-	},
-	 {    "id":"403",
-	"school_name":"prasanthi vidya vihar",
-    "student_name":"sravani",
-    "class": "10 ",
-    "role":"student",
-    "teacher":"vasantha"
+ 
 
-	},
-	 {    "id":"404",
-	"school name":"prasanthi vidya vihar",
-    "student name":"swapna",
-    "class": "10 ",
-    "role":"teacher",
-    "role":"teacher",
-    "teacher":"vasantha"
+  {
+     "class": "10",
+     "student_name": "nanu",
+     "id": "427",
+     "role": "Student",
+     "school_name": "prasanthi"
+     
+   },
 
-	},
-	{    "id":"405",
-	"school name":"prasanthi vidya vihar",
-    "student name":"naveen",
-    "class": "09",
-    "role":"student",
-    "teacher":"vasantha"
+  {
+      "class": "10",
+      "student_name": "ayesha",
+      "id": "428",
+      "role": "Teacher",
+      "school_name": "prasanthi"
+      
+   },
 
-	},
-	{    "id":"406",
-	"school name":"prasanthi vidya vihar",
-    "student name":"ramu",
-    "class": "09 ",
-    "role":"teacher",
-    "teacher":"vasantha"
+   
+  
 
-	},
-	{    "id":"407",
-	"school name":"prasanthi vidya vihar",
-    "student name":"suresh",
-    "class": "09 ",
-    "role":"student",
-    "teacher":"vasantha"
+  
 
-	},{    "id":"408",
-	"school name":"prasanthi vidya vihar",
-    "student name":"sandy",
-    "class": "09 ",
-    "role":"teacher",
-    "teacher":"vasantha"
+  {
+     "class": "9",
+     "student_name": "priya",
+     "id": "526",
+     "role": "Teacher",
+     "school_name": "schoolofroyals"
+      
+  },
+  
 
-	},
-	{    "id":"409",
-	"school name":"school of royals",
-    "student name":"dairy milk",
-    "class": "10 ",
-    "role":"student",
-    "teacher":"lucky"
+  {
+     "class": "9",
+     "student_name": "monu",
+     "id": "528",
+     "role": "student",
+     "school_name": "schoolofroyals"
+     
+  },
 
-	},
 
-	{    "id":"410",
-	"school name":"school of royals",
-    "student name":"kit kat",
-    "class": "10 ",
-     "role":"teacher",
-    "teacher":"lucky"
+  {
+     "class": "9",
+     "student_name": "monu",
+     "id": "528",
+     "role": "student",
+     "school_name": "schoolofroyals"
+     
+  }
 
-	},
-
-	{    "id":"411",
-	"school name":"school of royals",
-    "student name":"milky bar",
-    "class": "10 ",
-    "role":"student",
-    "teacher":"lucky"
-
-	},
-
-	{    "id":"412",
-	"school name":"school of royals",
-    "student name":"luv it",
-    "class": "10 ",
-     "role":"teacher",
-    "teacher":"lucky"
-
-	},
-
-	
-	{    "id":"413",
-	"school name":"school of royals",
-    "student name":"sea choco",
-    "class": "09 ",
-    "role":"student",
-    "teacher":"jain"
-
-	},
-	{    "id":"414",
-	"school name":"school of royals",
-    "student name":"candy",
-    "class": "09 ",
-     "role":"teacher", 
-    "teacher":"jain"
-
-	},
-	{    "id":"415",
-	"school name":"school of royals",
-    "student name":"milky choo",
-    "class": "09 ",
-    "role":"student",
-    "teacher":"jain"
-
-	},
-	{    "id":"416",
-	"school name":"school of royals",
-    "student name":"alien choco",
-    "class": "09 ",
-     "role":"teacher",
-    "teacher":"jain"
-
-	}
-]
+   ]
